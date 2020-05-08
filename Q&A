@@ -26,22 +26,19 @@
 
 
  
-// change the values of `balance`, `checkBalance`, and `isActive` to test your code
-var balance = 438.00;  //random balance
-var checkBalance = true; 
+var balance = 438.00;
+var checkBalance = true;
 var isActive = true;
 
 if (checkBalance === true) {
     if (isActive === true && balance > 0) {
-    console.log("Your balance is $"+balance.toFixed(4));  //numObj.toFixed([digits])
+    console.log("Your balance is $"+balance.toFixed(4));
 }   else if (isActive === true && balance < 0) {
     console.log("Your balance is negative");
 }   else if (isActive === true && balance === 0) {
-    console.log("Your balance is 0");
-}   else{
+    console.log("Your balance is "+ 0);
+}   else if (isActive === false) {
     console.log("Your account is not Active");
 }
-} else if (checkBalance === false){
+} else{
     console.log("Have a wonderful day!");
-}
-   
